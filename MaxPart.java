@@ -6,7 +6,6 @@ import java.awt.event.*;
 import java.awt.image.*;
 import javax.swing.*;
 import java.awt.*;
-import edu.fcps.Turtle;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
