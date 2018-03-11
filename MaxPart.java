@@ -6,7 +6,6 @@ import java.awt.event.*;
 import java.awt.image.*;
 import javax.swing.*;
 import java.awt.*;
-import edu.fcps.Turtle;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -18,9 +17,10 @@ public class MaxPart extends JPanel
 {
    private JButton Start;
    private JButton Exit;
-
-   public MaxPart()
+   private JFrame holdingFrame;
+   public MaxPart(JFrame arg)
    {
+<<<<<<< HEAD
       setLayout(new BorderLayout());
       ImageIcon icon = new ImageIcon("Play Button.png");
       ImageIcon icon2 = new ImageIcon("putin.png");
@@ -38,6 +38,24 @@ public class MaxPart extends JPanel
       panelBottom.setBackground(Color.WHITE);
       panelBottom.add(Start);
       panelBottom.add(Exit);
+=======
+<<<<<<< HEAD
+      holdingFrame = arg;
+      Start = new JButton("Start");
+      Exit = new JButton("Exit");
+      add(Start);
+      add(Exit);
+=======
+   setLayout(new BorderLayout());
+   
+   ImageIcon icon = new ImageIcon("Play Button.png");
+   ImageIcon icon2 = new ImageIcon("putin.png");
+      Start = new JButton(icon);
+      Exit = new JButton(icon2);
+      add(Start, BorderLayout.WEST);
+      add(Exit, BorderLayout.EAST);
+>>>>>>> be11136e7fc4224ef61636e7c838c082dfdda008
+>>>>>>> 508acd92e4efe3eed0c06921767904334048204b
       Start.addActionListener(new ListenerStart());
       Exit.addActionListener(new ListenerExit());
    }
