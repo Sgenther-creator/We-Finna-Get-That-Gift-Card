@@ -20,11 +20,13 @@ public class MaxPart extends JPanel
    private JFrame holdingFrame;
    public MaxPart(JFrame arg)
    {
+<<<<<<< HEAD
       holdingFrame = arg;
       Start = new JButton("Start");
       Exit = new JButton("Exit");
       add(Start);
       add(Exit);
+=======
    setLayout(new BorderLayout());
    
    ImageIcon icon = new ImageIcon("Play Button.png");
@@ -33,6 +35,7 @@ public class MaxPart extends JPanel
       Exit = new JButton(icon2);
       add(Start, BorderLayout.WEST);
       add(Exit, BorderLayout.EAST);
+>>>>>>> be11136e7fc4224ef61636e7c838c082dfdda008
       Start.addActionListener(new ListenerStart());
       Exit.addActionListener(new ListenerExit());
    }
