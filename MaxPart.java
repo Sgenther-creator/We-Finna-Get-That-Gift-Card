@@ -45,7 +45,9 @@ public class MaxPart extends JPanel
       public void actionPerformed(ActionEvent e)
       {
          Start.setVisible(false);
-            
+         removeAll();   
+         repaint();
+         add(new Level1());
       }
    }
    private class ListenerExit implements ActionListener 
