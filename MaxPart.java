@@ -19,13 +19,14 @@ public class MaxPart extends JPanel
    private JButton Start;
    private JButton Exit;
 
-   public Max Part()
+   public MaxPart()
    {
       Start = new JButton("Start");
       Exit = new JButton("Exit");
       add(Start);
       add(Exit);
       Start.addActionListener(new ListenerStart());
+      Exit.addActionListener(new ListenerExit());
    }
    private class ListenerStart implements ActionListener 
    {
@@ -39,14 +40,12 @@ public class MaxPart extends JPanel
          
       }
    }
-   private class ListenerStart implements ActionListener 
+   private class ListenerExit implements ActionListener 
    {
       public void actionPerformed(ActionEvent e)
       {
          Exit.setVisible(false);
-         System.exit();
       }
    }
-
 
 }
