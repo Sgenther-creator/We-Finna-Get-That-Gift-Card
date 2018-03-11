@@ -53,15 +53,13 @@ public class MaxPart extends JPanel
          removeAll();   
          repaint();
          add(new CharacterCreation());
+         //add(new Level1());
          
          // kazuyapic = new JButton(icon);
       //          kazuyapic.addActionListener(new ListenerKazuyapic());
       //          add(kazuyapic);
          
       
-         Start.setVisible(false);
-         removeAll();   
-         repaint();
          //add(new Level1());
       
       }

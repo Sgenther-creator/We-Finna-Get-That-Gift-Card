@@ -21,12 +21,16 @@ public class Level1 extends JPanel
 
    public Level1()
    {
-      Issue1 = new JButton("Issue");
+      Issue1 = new JButton("Issue1");
       Issue2 = new JButton("Issue2");
       Issue3 = new JButton("Issue3");
+      ImageIcon icon = new ImageIcon("mayor's house.jpg");
+      JLabel j = new JLabel(icon);
       setLayout(new BorderLayout());
       JPanel panelBottom = new JPanel();
       panelBottom.setLayout(new FlowLayout());
+      add(j);
+      setBackground(Color.WHITE);
       add(panelBottom, BorderLayout.SOUTH);
       panelBottom.setBackground(Color.WHITE);
       Issue1.setPreferredSize(new Dimension(200, 100));
@@ -38,6 +42,30 @@ public class Level1 extends JPanel
       panelBottom.add(Issue1);
       panelBottom.add(Issue2);
       panelBottom.add(Issue3);
-   
+      Issue1.addActionListener(new ListenerIssue1());
+      Issue2.addActionListener(new ListenerIssue2());
+      Issue3.addActionListener(new ListenerIssue3());
    }
+   private class ListenerIssue1 implements ActionListener 
+   {
+      public void actionPerformed(ActionEvent e)
+      {
+      
+      }
+   }
+   private class ListenerIssue2 implements ActionListener 
+   {
+      public void actionPerformed(ActionEvent e)
+      {
+      
+      }
+   }
+   private class ListenerIssue3 implements ActionListener 
+   {
+      public void actionPerformed(ActionEvent e)
+      {
+      
+      }
+   }
+
 }
