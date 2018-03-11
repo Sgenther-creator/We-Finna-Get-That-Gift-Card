@@ -19,6 +19,7 @@ public class MaxPart extends JPanel
    private JButton Exit;
    public MaxPart()
    {
+<<<<<<< HEAD
       holdingFrame = arg;
       Start = new JButton("Start");
       Exit = new JButton("Exit");
