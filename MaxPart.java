@@ -25,6 +25,14 @@ public class MaxPart extends JPanel
       Exit = new JButton("Exit");
       add(Start);
       add(Exit);
+   setLayout(new BorderLayout());
+   
+   ImageIcon icon = new ImageIcon("Play Button.png");
+   ImageIcon icon2 = new ImageIcon("putin.png");
+      Start = new JButton(icon);
+      Exit = new JButton(icon2);
+      add(Start, BorderLayout.WEST);
+      add(Exit, BorderLayout.EAST);
       Start.addActionListener(new ListenerStart());
       Exit.addActionListener(new ListenerExit());
    }
@@ -33,7 +41,7 @@ public class MaxPart extends JPanel
       public void actionPerformed(ActionEvent e)
       {
          Start.setVisible(false);
-         //ImageIcon icon = new ImageIcon("Kazuya Fish.png");
+         
          // kazuyapic = new JButton(icon);
       //          kazuyapic.addActionListener(new ListenerKazuyapic());
       //          add(kazuyapic);
