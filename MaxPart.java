@@ -45,6 +45,7 @@ public class MaxPart extends JPanel
       public void actionPerformed(ActionEvent e)
       {
          Exit.setVisible(false);
+         System.exit(0);
       }
    }
 
