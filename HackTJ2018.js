@@ -1,3 +1,7 @@
-console.log("Hello World");
-console.log("dick weed");  
-console.log("Bring Back ToysRUs");
+function setup() {
+	createCanvas(400,600);
+}
+function draw() 
+{
+	background(0);
+}
