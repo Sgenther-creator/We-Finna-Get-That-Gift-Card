@@ -6,7 +6,6 @@ import java.awt.event.*;
 import java.awt.image.*;
 import javax.swing.*;
 import java.awt.*;
-import edu.fcps.Turtle;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -18,9 +17,10 @@ public class MaxPart extends JPanel
 {
    private JButton Start;
    private JButton Exit;
-
-   public MaxPart()
+   private JFrame holdingFrame;
+   public MaxPart(JFrame arg)
    {
+      holdingFrame = arg;
       Start = new JButton("Start");
       Exit = new JButton("Exit");
       add(Start);
