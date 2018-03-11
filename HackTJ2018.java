@@ -16,4 +16,4 @@ public class HackTJ2018
       frame.setContentPane(new MaxPart());
       frame.setVisible(true);
    }
-}
+}  

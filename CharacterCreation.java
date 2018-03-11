@@ -8,6 +8,11 @@ import java.awt.event.*;
 public class CharacterCreation extends JPanel
 {
    private JFrame holdingFrame;
+   public CharacterCreation()
+   {
+      //holdingFrame = arg;
+   }
+
    public CharacterCreation(JFrame arg)
    {
       holdingFrame = arg;
