@@ -21,14 +21,23 @@ public class MaxPart extends JPanel
 
    public MaxPart()
    {
-   setLayout(new BorderLayout());
-   
-   ImageIcon icon = new ImageIcon("Play Button.png");
-   ImageIcon icon2 = new ImageIcon("putin.png");
+      setLayout(new BorderLayout());
+      ImageIcon icon = new ImageIcon("Play Button.png");
+      ImageIcon icon2 = new ImageIcon("putin.png");
+      ImageIcon icon3 = new ImageIcon("money.jpg");
+      JLabel j = new JLabel(icon3);
       Start = new JButton(icon);
       Exit = new JButton(icon2);
-      add(Start, BorderLayout.WEST);
-      add(Exit, BorderLayout.EAST);
+      JPanel panelBottom = new JPanel();
+      panelBottom.setLayout(new FlowLayout());
+      add(j);
+      add(panelBottom, BorderLayout.SOUTH);
+      Start.setBackground(Color.WHITE);
+      Exit.setBackground(Color.WHITE);
+      setBackground(Color.WHITE);
+      panelBottom.setBackground(Color.WHITE);
+      panelBottom.add(Start);
+      panelBottom.add(Exit);
       Start.addActionListener(new ListenerStart());
       Exit.addActionListener(new ListenerExit());
    }
