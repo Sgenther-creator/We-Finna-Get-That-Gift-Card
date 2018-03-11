@@ -20,6 +20,20 @@ public class MaxPart extends JPanel
 
    public MaxPart()
    {
+<<<<<<< HEAD
+      holdingFrame = arg;
+      Start = new JButton("Start");
+      Exit = new JButton("Exit");
+      add(Start);
+      add(Exit);
+      setLayout(new BorderLayout());
+      ImageIcon icon = new ImageIcon("Play Button.png");
+      ImageIcon icon2 = new ImageIcon("putin.png");
+      Start = new JButton(icon);
+      Exit = new JButton(icon2);
+      add(Start, BorderLayout.WEST);
+      add(Exit, BorderLayout.EAST);
+=======
       setLayout(new BorderLayout());
       ImageIcon icon = new ImageIcon("Play Button.png");
       ImageIcon icon2 = new ImageIcon("putin.png");
@@ -37,6 +51,7 @@ public class MaxPart extends JPanel
       panelBottom.setBackground(Color.WHITE);
       panelBottom.add(Start);
       panelBottom.add(Exit);
+>>>>>>> 766937021b9507b7456a02a50f64374cbe594334
       Start.addActionListener(new ListenerStart());
       Exit.addActionListener(new ListenerExit());
    }
@@ -44,17 +59,29 @@ public class MaxPart extends JPanel
    {
       public void actionPerformed(ActionEvent e)
       {
+<<<<<<< HEAD
+         holdingFrame.setContentPane(new CharacterCreation(holdingFrame));
+         
+         // kazuyapic = new JButton(icon);
+      //          kazuyapic.addActionListener(new ListenerKazuyapic());
+      //          add(kazuyapic);
+         
+=======
          Start.setVisible(false);
+<<<<<<< HEAD
          removeAll();   
          repaint();
          add(new Level1());
+=======
+            
+>>>>>>> 766937021b9507b7456a02a50f64374cbe594334
+>>>>>>> fad36dc25eca11a7090b94ce34e175a58175827c
       }
    }
    private class ListenerExit implements ActionListener 
    {
       public void actionPerformed(ActionEvent e)
       {
-         Exit.setVisible(false);
          System.exit(0);
       }
    }
